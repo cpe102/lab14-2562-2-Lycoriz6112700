@@ -18,4 +18,14 @@ int main(){
 	return 0;
 }
 
-//Write definition of shuffle() here 
+void shuffle(int &a,int &b, int &c, int &d){
+	int p[] = {a,b,c,d};
+	for (int i = 0; i < 4; i++){
+		int x = rand()%4;
+		swap(p[i],p[x]);
+	}
+	a=p[0];
+	b=p[1];
+	c=p[2];
+	d=p[3];
+}
